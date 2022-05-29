@@ -1,0 +1,97 @@
+body{
+    background-color: rgba(0, 0, 0, 0.872);
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(247, 244, 244);
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.525);
+    border-radius: 20px;
+}
+
+button{
+    border-style: solid;
+    background-color:black;
+    border-color: white;
+    color: rgb(254, 254, 254);
+    border-radius: 7px;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 4px 6px 4px 6px;
+}
+button:hover{
+    background-color:rgb(255, 255, 255);
+    color: black;
+}
+
+#newarr{
+    margin-right: 190px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+#bubble,#selection,#insertion,#merge,#quick,#sizer,#speed{
+    margin-right: 20px;
+    margin-bottom: 65px;
+}
+
+#bar{
+    color: red;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    flex-direction: row;
+    padding: 20px 30px 0px 10px;
+    transform: scaleY(-1);
+}
+
+.baritem {
+    background:white;
+    border: 1.25px solid rgb(0, 0, 0);
+    width: 0.75%;
+  }
+
+a{
+    text-decoration: none;
+    color: aqua;
+}
+
+a:hover{
+    color: #00FF00;
+}
+
+.my1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.my2{
+    -webkit-appearance: none;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.my2::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 30%;
+    background:black;
+    cursor: pointer;
+  }
+
+.my3{
+    display: flex;
+    justify-content: center;
+}
