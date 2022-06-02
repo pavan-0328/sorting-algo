@@ -7,14 +7,14 @@ async function merge(ele,low,mid,high){
     
     for(let i=0; i<n1; i++)
     {
-        await delay(time);
+        //await delay(time);
         ele[low+i].style.background='yellow';
         left[i]=ele[low+i].style.height;
     }
 
     for(let j=0; j<n2; j++)
     {
-        await delay(time);
+        //await delay(time);
         ele[mid+1+j].style.background='red';
         right[j]=ele[mid+1+j].style.height;
     }
@@ -24,7 +24,7 @@ async function merge(ele,low,mid,high){
 
     while(i<n1 && j<n2)
     {
-        await delay(time);
+        await delay(parseInt(time/Math.max(n1,n2)));
         if(parseInt(left[i])<=parseInt(right[j]))
         {
             if((n1+n2)==ele.length)
@@ -59,7 +59,7 @@ async function merge(ele,low,mid,high){
 
     while(i<n1)
     {
-        await delay(time);
+        await delay(time/(n1 - i));
         if((n1+n2)==ele.length)
         {
             ele[k].style.background='green';
@@ -76,7 +76,7 @@ async function merge(ele,low,mid,high){
 
     while(j<n2)
     {
-        await delay(time);
+        await delay(time/(n2-i));
         if((n1+n2)==ele.length)
         {
             ele[k].style.background='green';
